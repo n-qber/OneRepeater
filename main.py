@@ -30,7 +30,7 @@ if __name__ == '__main__':
     Saver(url).save_information()
     extender = VideoExtender(url)
     extender.extend()
-    if input("Do you already have the upload code (Y/N):  ").lower().startswith("Y"):
+    if input("Do you already have the upload code (Y/N):  ").lower().startswith("N"):
 
         auth = Authenticate('client_secret.json', ['https://www.googleapis.com/auth/youtube.upload'])
         auth.start()
